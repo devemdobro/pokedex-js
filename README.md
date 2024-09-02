@@ -1,31 +1,73 @@
-# PokeQuest
+![Logo](https://user-images.githubusercontent.com/74621925/175611364-e2d90132-0d0e-4bc2-bf80-55775e1f5656.png)
 
-esse projeto foi proposto como desafio do curso DevQuest ele tem como propósito enviar dados de pokemons como suas habilidades e lista de movimentos trazendo os mesmos de uma API
+Esta **Pokédex** exibe centenas de pokémons e seus respectivos stats por meio da [PokéAPI](https://pokeapi.co/)! 
 
-## Funcionalidades
 
-Esse projeto tem como funcionalidades mostrar pokemons na página inicial e após selecionar algum deles você verá os detalhes do mesmo assim como também poderá buscar pelo pokemon de sua preferência para que possa ver seus detalhes.
+## ⚙ Funcionalidades
 
-<p align="center"><img width="470" src="src/assets/pokequest.gif"></p>
+- Temas dark e light
+- SPA
+- Design responsivo
 
-## Ferramentas utilizadas
 
--- React: foi utilizada pelo seu potencial de SPA(single page aplication) o que contribui bastante para esse projeto
+## 📷 Screenshots
 
--- React-router: ferramenta que proporciona a navegação dentro da SPA.
+<table>
+   <tr>
+      <td>
+         <img src="https://user-images.githubusercontent.com/74621925/175657481-e3e1b111-3a95-4dec-acf6-0677768093fe.gif" width="100%">
+      </td>
+      <td>
+         <img src="https://user-images.githubusercontent.com/74621925/175657623-bfac1434-b88b-4641-8d17-d12011039534.gif" width="100%">
+      </td>
+   </tr>
+   <tr>
+      <td>
+         <img src="https://user-images.githubusercontent.com/74621925/175657739-fcc291c3-4190-49a9-9473-da4fff1e0061.gif" width="100%">
+      </td>
+      <td>
+         <img src="https://user-images.githubusercontent.com/74621925/175657763-ca2f8541-60ed-4d2d-a5d6-8dab118939a8.gif" width="100%">
+      </td>
+</table>
+   
 
--- styled-components: estilos de maneira mais dinâmica podendo conter código javascript no mesmo.
 
-## Decisões aplicadas
+## 🛠 Tecnologias utilizadas
+<p>
+   <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original.svg" />
+   <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" />
+   <img height="40" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original.svg" />
+</p>
+<p>
+   Para o desenvolvimento deste projeto, utilizei a biblioteca <strong>React</strong> para a construção de componentes que se repetem na tela com poucas alterações entre si, como, por exemplo, os containers que exibem os nomes e imagens dos pokémons na <i>home</i>. Além disso, o React permite renderizar mais pokémons na página ao toque de um clique sem a necessidade de recarregá-la.
+</p>
+<p>
+   Optei por requisitar à <strong>PokéAPI</strong> apenas os pokémons que devem ser imediatamente renderizados na tela no momento em que a página é carregada e, eventualmente, quando o usuário clica no botão <i>More Pokémon</i>. Desse modo, há uma melhor performance, visto que cada requisição à PokéAPI se limita aos dados de apenas dez pokémons e não dos 1154 de uma só vez.
+</p>
 
-uma das principais decisões foi o de colocar o tipo do pokemon na tela inicial, outra decisão foi colocar os temas clara e escuro como algo que refletisse a própria atmosfera do pokemon como Ash Ketchum ou tema Treinador como tema claro e tema escuro para Equipe Rocket
 
-## Para iniciar
+## 💻 Rodando localmente
 
-para iniciar siga os seguintes passos :
+Clone o projeto
 
--- faça o clone normalmente do repositório
+```bash
+  git clone https://github.com/gabrielhamdan/pokedex.git
+```
 
--- utilize o comando: npm install
+Entre no diretório do projeto
 
--- utilize o comando: npm start
+```bash
+  cd pokedex
+```
+
+Instale as dependências
+
+```bash
+  npm install
+```
+
+Inicie o servidor
+
+```bash
+  npm start
+```
